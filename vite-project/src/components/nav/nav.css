@@ -19,8 +19,15 @@ ul {
   display: none;
 }
 
+.hamburger-icon {
+  color: #9e9aa7;
+  cursor: pointer;
+  transition: 2s ease;
+}
+
+
 @media screen and (min-width: 768px) {
-  nav .hamburger {
+  nav .hamburger-icon {
     display: none;
   }
 

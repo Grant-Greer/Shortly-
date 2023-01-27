@@ -13,10 +13,10 @@ function App() {
         <section className="intro">
           <h2>More than just</h2>
           <h2>shorter links</h2>
-          <p>
-            Build your Brands recognition and get detailed insights on how your
-            links are performing.
-          </p>
+          <p>Build your Brands recognition and</p>
+          <span>get detailed insights on how your</span>
+          <span>links are performing.</span>
+          <button className="start-button">Get Started</button>
         </section>
         <section></section>
         <section></section>
