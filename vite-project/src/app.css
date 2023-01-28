@@ -16,13 +16,13 @@
 
 .intro p {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 500;
   margin-top: 1rem;
 }
 
 .intro span {
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .working-img {
@@ -41,6 +41,53 @@
   font-weight: 800;
   cursor: pointer;
   width: 12rem;
+}
+
+.feature-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin: 2rem auto;
+  width: 85%;
+}
+
+.feature-intro h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.feature-intro p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.feature-intro span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(0, 0%, 75%);
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 478px) {
