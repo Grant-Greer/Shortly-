@@ -8,20 +8,27 @@
   width: 85%;
 }
 
+header .working-img {
+  width: 135vw;
+  padding-left: 1.6rem;
+  overflow: hidden;
+}
+
 .intro h2 {
   font-size: 2.4rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 0;
+  color: var(--very-dark-violet);
 }
 
 .intro p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-top: 1rem;
 }
 
 .intro span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -35,7 +42,7 @@
   padding: 1.2rem 2rem;
   border: none;
   border-radius: 2rem;
-  background: #000;
+  background: var(--Cyan);
   color: #fff;
   font-size: 1.2rem;
   font-weight: 800;
@@ -53,19 +60,23 @@
   width: 85%;
 }
 
+.features {
+  background-color: #eff1f7;
+}
+
 .feature-intro h2 {
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .feature-intro p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-top: 1rem;
 }
 
 .feature-intro span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -75,7 +86,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: hsl(0, 0%, 75%);
 }
 
 .feature-card {
@@ -88,6 +98,39 @@
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.boost-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 17rem;
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: #3b3054;
+}
+
+.boost-cta h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 478px) {
@@ -108,12 +151,12 @@
 
   .intro p {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 500;
     margin-top: 2rem;
   }
 
   .intro span {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 500;
   }
 }

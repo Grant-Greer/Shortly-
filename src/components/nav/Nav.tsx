@@ -1,11 +1,10 @@
 import "./nav.css";
-import { Logo } from "../../assets/Logo";
 import { HamburgerIcon } from "../../assets/HamburgerIcon";
 export const Nav = () => {
   return (
     <div id="nav-container">
       <nav>
-        <Logo />
+        <img src="/images/logo.svg" alt="Shortly Logo" />
         <HamburgerIcon />
         <ul>
           <li>
@@ -19,7 +18,6 @@ export const Nav = () => {
           </li>
         </ul>
       </nav>
-      
     </div>
   );
 };
