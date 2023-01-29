@@ -2,7 +2,7 @@ import "./footer.css";
 export const Footer = () => {
   return (
     <footer>
-      <img src="/images/logo.svg" alt="Shortly Logo" />
+      <img src="/images/logo.svg" className="footer-logo" alt="Shortly Logo" />
       <div className="footer-links">
         <div className="footer-link">
           <h3>Features</h3>

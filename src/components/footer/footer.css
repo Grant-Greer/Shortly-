@@ -45,6 +45,11 @@ footer li:last-child {
   margin-top: 1.3rem;
 }
 
+.footer-logo {
+  margin-top: 1.7rem;
+  margin-bottom: 2rem;
+}
+
 .footer-bottom img {
-  padding: 0 0.5rem;
+  padding: 0 0.6rem;
 }
