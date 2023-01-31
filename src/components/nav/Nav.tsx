@@ -17,6 +17,10 @@ export const Nav = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
+        <div className="nav-right--desktop">
+          <button>Login</button>
+          <button>Sign Up</button>
+        </div>
       </nav>
     </div>
   );

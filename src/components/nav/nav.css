@@ -24,7 +24,19 @@ ul {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+.nav-right--desktop {
+  display: hidden;
+}
+
+.nav-right--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #nav-container {
+    width: 80%;
+  }
+
   nav .hamburger-icon {
     display: none;
   }
@@ -43,5 +55,44 @@ ul {
 
   li a {
     text-decoration: none;
+    color: var(--Gray);
+  }
+
+  li a:hover {
+    color: var(--dark-violet);
+  }
+
+  .nav-right--desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .nav-right--desktop button:first-child {
+    border: none;
+    background: none;
+    color: var(--Gray);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-right--desktop button:last-child {
+    padding: 0.8rem 1.7rem;
+    border: none;
+    border-radius: 2rem;
+    background: var(--Cyan);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 9rem;
+  }
+
+  .nav-right--desktop button:last-child:hover {
+    background: hsl(180, 74%, 77%);
   }
 }

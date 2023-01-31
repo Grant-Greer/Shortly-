@@ -1,4 +1,3 @@
-import "./index.css";
 import "./App.css";
 import { Nav } from "./components/nav/Nav";
 import { Footer } from "./components/footer/Footer";
@@ -7,21 +6,24 @@ function App() {
     <div>
       <header>
         <Nav />
-        <img
-          src="./images/illustration-working.svg"
-          alt="woman working at desk"
-          className="working-img"
-        />
+        <div className="hero">
+          <img
+            src="./images/illustration-working.svg"
+            alt="woman working at desk"
+            className="working-img"
+          />
+          <div className="intro">
+            <h2>More than just</h2>
+            <h2>shorter links</h2>
+            <p>Build your Brands recognition and</p>
+            <span>get detailed insights on how your</span>
+            <span>links are performing.</span>
+            <button className="start-button">Get Started</button>
+          </div>
+        </div>
       </header>
+
       <main>
-        <section className="intro">
-          <h2>More than just</h2>
-          <h2>shorter links</h2>
-          <p>Build your Brands recognition and</p>
-          <span>get detailed insights on how your</span>
-          <span>links are performing.</span>
-          <button className="start-button">Get Started</button>
-        </section>
         <section className="features">
           <div className="feature-intro">
             <h2>Advanced Statistics</h2>
@@ -43,7 +45,6 @@ function App() {
                 don’t mean a thing. Branded links help instil confidence in your
                 content.
               </p>
-              <div className="cyan-bar" />
             </div>
             <div className="feature-card">
               <div className="feature-card-circle">
@@ -58,7 +59,6 @@ function App() {
                 where people engage with your content helps inform better
                 decisions.
               </p>
-              <div className="cyan-bar" />
             </div>
             <div className="feature-card">
               <div className="feature-card-circle">
@@ -73,6 +73,7 @@ function App() {
                 customizable links, supercharging audience engagement.
               </p>
             </div>
+            <div className="cyan-bar" />
           </div>
         </section>
         <section className="boost-cta">

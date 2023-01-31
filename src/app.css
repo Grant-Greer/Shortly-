@@ -1,3 +1,8 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -8,52 +13,52 @@
   width: 85%;
 }
 
-header .working-img {
-  width: 135vw;
+.working-img {
+  width: 100%;
   padding-left: 1.6rem;
   overflow: hidden;
 }
 
 .intro h2 {
-  font-size: 2.4rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 0;
   color: hsl(260, 8%, 14%);
 }
 
 .intro p {
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   margin-top: 1rem;
   color: hsl(0, 0%, 75%);
 }
 
 .intro span {
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: hsl(0, 0%, 75%);
 }
 
-.working-img {
-  display: block;
-  width: 100%;
-}
-
 .start-button {
-  margin-top: 2rem;
-  padding: 0.9rem 2rem;
+  margin-top: 4rem;
+  padding: 0.7rem 0;
   border: none;
-  border-radius: 2rem;
+  border-radius: 3rem;
   background: var(--Cyan);
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 800;
   cursor: pointer;
-  width: 13rem;
+  width: 16.8rem;
+  height: 4.8rem;
+}
+
+.start-button:hover {
+  background: hsl(180, 74%, 77%);
 }
 
 .start-button:last-child {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .feature-intro {
@@ -71,21 +76,21 @@ header .working-img {
 }
 
 .feature-intro h2 {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: hsl(260, 8%, 14%);
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 .feature-intro p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: hsl(0, 0%, 75%);
 }
 
 .feature-intro span {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: hsl(0, 0%, 75%);
 }
@@ -103,46 +108,49 @@ header .working-img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 85%;
+  width: 88%;
+  height: 26rem;
   margin: 3rem auto;
-  padding: 2rem;
+  padding: 2.4rem;
   background-color: #fff;
   box-shadow: 0 0 0.3rem rgba(152, 152, 152, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   z-index: 9998;
 }
 
 .feature-card h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: hsl(260, 8%, 14%);
+  text-align: center;
 }
 
 .feature-card p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-top: 1rem;
   color: hsl(0, 0%, 75%);
+  text-align: center;
 }
 
 .feature-card-circle {
-  width: 5.7rem;
-  height: 5.7rem;
+  width: 7.7rem;
+  height: 7.7rem;
   border-radius: 50%;
   background-color: hsl(257, 27%, 26%);
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-4.7rem);
+  transform: translateY(-6rem);
 }
 
 .cyan-bar {
-  height: 7rem;
-  width: 0.5rem;
+  height: 100%;
+  position: absolute;
+  width: 0.7rem;
   background-color: var(--Cyan);
-  z-index: -9999;
-  transform: translateY(9rem);
+  z-index: 0;
 }
 
 .boost-cta {
@@ -153,14 +161,14 @@ header .working-img {
   justify-self: center;
   margin: 0 auto;
   width: 100%;
-  height: 19rem;
+  height: 29rem;
   background-image: url(../images/bg-boost-mobile.svg);
   background-repeat: no-repeat;
   background-color: #3b3054;
 }
 
 .boost-cta h2 {
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #fff;
   margin: 0 auto;
@@ -176,20 +184,53 @@ header .working-img {
     margin: 3rem auto;
     width: 85%;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    flex-direction: row-reverse;
+  }
+
+  .intro {
+    align-items: flex-start;
+    padding-left: 8.5rem;
+  }
 
   .intro h2 {
-    font-size: 3rem;
-    font-weight: 700;
+    text-align: left;
   }
 
   .intro p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 2rem;
+    font-size: 16px;
   }
 
-  .intro span {
-    font-size: 1.5rem;
-    font-weight: 500;
+  .boost-cta {
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #3b3054;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-container {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .feature-card {
+    width: 30%;
+    height: 26rem;
+    margin: 3rem 2rem;
+    padding: 2.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 0.3rem rgba(152, 152, 152, 0.2);
+    border-radius: 0.5rem;
+    z-index: 9998;
+  }
+
+  .cyan-bar {
+    width: 80%;
+    height: 0.7rem;
   }
 }
