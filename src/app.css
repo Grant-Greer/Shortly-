@@ -1,53 +1,13 @@
-.hero {
-  display: flex;
-  flex-direction: column;
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  justify-self: center;
-  margin: 2rem auto;
-  width: 85%;
-}
-
-.working-img {
-  width: 100%;
-  padding-left: 1.6rem;
-  overflow: hidden;
-}
-
-.intro h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 0;
-  color: hsl(260, 8%, 14%);
-}
-
-.intro p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  color: hsl(0, 0%, 75%);
-}
-
-.intro span {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: hsl(0, 0%, 75%);
-}
-
 .start-button {
   margin-top: 4rem;
   padding: 0.7rem 0;
   border: none;
-  border-radius: 3rem;
+  border-radius: 2.8rem;
   background: var(--Cyan);
   color: #fff;
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
   cursor: pointer;
   width: 16.8rem;
   height: 4.8rem;
@@ -77,20 +37,27 @@
 
 .feature-intro h2 {
   font-size: 2.8rem;
+  line-height: 4.8rem;
+  text-align: center;
+  letter-spacing: -0.7px;
   font-weight: 700;
   color: hsl(260, 8%, 14%);
   margin-top: 8rem;
 }
 
 .feature-intro p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: center;
   font-weight: 500;
   margin-top: 1.5rem;
   color: hsl(0, 0%, 75%);
 }
 
 .feature-intro span {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: center;
   font-weight: 500;
   color: hsl(0, 0%, 75%);
 }
@@ -100,7 +67,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 85%;
 }
 
 .feature-card {
@@ -119,8 +86,10 @@
 }
 
 .feature-card h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
   font-weight: 700;
+  text-align: center;
   color: hsl(260, 8%, 14%);
   text-align: center;
 }
@@ -134,8 +103,8 @@
 }
 
 .feature-card-circle {
-  width: 7.7rem;
-  height: 7.7rem;
+  width: 8.8rem;
+  height: 8.8rem;
   border-radius: 50%;
   background-color: hsl(257, 27%, 26%);
   z-index: 9999;
@@ -168,69 +137,22 @@
 }
 
 .boost-cta h2 {
-  font-size: 2.6rem;
+  font-style: normal;
   font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 4.8rem;
+  text-align: center;
+  letter-spacing: -0.7px;
   color: #fff;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 478px) {
-  .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
-    margin: 3rem auto;
-    width: 85%;
-  }
-}
-
 @media screen and (min-width: 1024px) {
-  .hero {
-    flex-direction: row-reverse;
-  }
-
-  .intro {
-    align-items: flex-start;
-    padding-left: 8.5rem;
-  }
-
-  .intro h2 {
-    text-align: left;
-  }
-
-  .intro p {
-    font-size: 16px;
-  }
-
   .boost-cta {
     background-image: url(../images/bg-boost-desktop.svg);
     background-repeat: no-repeat;
     background-color: #3b3054;
     background-position: center;
     background-size: cover;
-  }
-
-  .card-container {
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .feature-card {
-    width: 30%;
-    height: 26rem;
-    margin: 3rem 2rem;
-    padding: 2.4rem;
-    background-color: #fff;
-    box-shadow: 0 0 0.3rem rgba(152, 152, 152, 0.2);
-    border-radius: 0.5rem;
-    z-index: 9998;
-  }
-
-  .cyan-bar {
-    width: 80%;
-    height: 0.7rem;
   }
 }

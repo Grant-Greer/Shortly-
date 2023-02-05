@@ -1,7 +1,8 @@
 #nav-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 90%;
+  max-width: 1200px;
   height: 6rem;
   margin: 1rem auto;
 }
@@ -11,8 +12,9 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 85%;
   height: 100%;
+  margin: 0 auto;
 }
 
 ul {
@@ -33,10 +35,6 @@ ul {
 }
 
 @media screen and (min-width: 1024px) {
-  #nav-container {
-    width: 80%;
-  }
-
   nav .hamburger-icon {
     display: none;
   }
@@ -44,8 +42,9 @@ ul {
   ul {
     display: flex;
     flex-direction: row;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 
   li {
@@ -55,11 +54,11 @@ ul {
 
   li a {
     text-decoration: none;
-    color: var(--Gray);
+    color: var(--Grayish-Violet);
   }
 
   li a:hover {
-    color: var(--dark-violet);
+    color: var(--Dark-Violet);
   }
 
   .nav-right--desktop {
@@ -73,9 +72,10 @@ ul {
   .nav-right--desktop button:first-child {
     border: none;
     background: none;
-    color: var(--Gray);
-    font-size: 1.2rem;
-    font-weight: 500;
+    color: var(--Grayish-Violet);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
     padding: 0.8rem 1.5rem;
     cursor: pointer;
   }
