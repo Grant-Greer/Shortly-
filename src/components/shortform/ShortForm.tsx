@@ -1,22 +1,22 @@
 import "./shortform.css";
-import { useState, FormEvent, useEffect } from "react";
+import { useState, FormEvent, useEffect, useMemo } from "react";
 
 const ShortForm = () => {
   const [inputUrl, setInputUrl] = useState("");
   const [copyClicked, setCopyClicked] = useState(false);
+  const [error, setError] = useState("");
+
   const [shortenedUrls, setShortenedUrls] = useState<string[]>(
-    JSON.parse(localStorage.getItem("shortenedUrls")!) || []
+    useMemo(() => JSON.parse(localStorage.getItem("shortenedUrls")!) || [], [])
   );
   const [longUrls, setlongUrls] = useState<string[]>(
-    JSON.parse(localStorage.getItem("longUrls")!) || []
+    useMemo(() => JSON.parse(localStorage.getItem("longUrls")!) || [], [])
   );
 
   useEffect(() => {
     localStorage.setItem("shortenedUrls", JSON.stringify(shortenedUrls));
     localStorage.setItem("longUrls", JSON.stringify(longUrls));
   }, [shortenedUrls, longUrls]);
-
-  const [error, setError] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,11 +32,10 @@ const ShortForm = () => {
       const data = await response.json();
       const originalLink = data.result.original_link;
       const endIndex = originalLink.indexOf(".com") + 4;
-      const shortOriginal = originalLink.substring(0, endIndex);
+      const shortOriginal = originalLink.substring(0, endIndex) + "...";
       setShortenedUrls([...shortenedUrls, data.result.short_link]);
       setlongUrls([...longUrls, shortOriginal]);
-      localStorage.setItem("shortenedUrls", JSON.stringify(shortenedUrls));
-      localStorage.setItem("longUrls", JSON.stringify(longUrls));
+      setInputUrl("");
     } catch (error) {
       console.error(error);
     }
