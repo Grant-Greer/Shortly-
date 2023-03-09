@@ -1,6 +1,6 @@
 # Shortly
 
-A simple web application that allows you to shorten any valid URL. The app integrates with the shortcode API and provides a user-friendly interface. This project was built with React, TypeScript, Vite + SWC.
+A simple web application that allows you to shorten any valid URL. The app integrates with the shortcode API and provides a user-friendly interface. This project was built with Astro, React, TypeScript, Vite + SWC.
 
 ## Features
 
@@ -23,4 +23,4 @@ If the input field is empty, you will receive an error message indicating that a
 
 ## Conclusion
 
-Overall, Shortly is a fast and convenient way to shorten your URLs. Whether you're a marketer, blogger, or just someone who wants to share links, this app is perfect for you. With its robust and efficient architecture built with React, TypeScript, Vite + SWC, you can trust that your links will be shortened quickly and easily. Try it out and see for yourself!
+Overall, Shortly is a fast and convenient way to shorten your URLs. Whether you're a marketer, blogger, or just someone who wants to share links, this app is perfect for you. With its robust and efficient architecture built with Astro, React, TypeScript, Vite + SWC, you can trust that your links will be shortened quickly and easily. Try it out and see for yourself!
